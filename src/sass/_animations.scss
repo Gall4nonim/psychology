@@ -1,0 +1,99 @@
+@keyframes enterAnimationLeftHeader {
+	from {
+		transform: translateX(-50%) scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes enterAnimationRightHeader {
+	from {
+		transform: translateX(50%) scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes opacityH1 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes arrowAnimation {
+	0%,
+	25%,
+	50%,
+	75%,
+	90%,
+	100% {
+		transform: translateY(0);
+	}
+	15%,
+	40% {
+		transform: translateY(-20px);
+	}
+	65%,
+	80% {
+		transform: translateY(-7.5px);
+	}
+	95% {
+		transform: translateY(-5px);
+	}
+}
+
+@keyframes leftSideAnimation {
+	from {
+		transform: translateX(-150px);
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes middleSideAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes rightSideAnimation {
+	from {
+		transform: translateX(150px);
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.show-left-animation {
+	animation: leftSideAnimation 2s forwards;
+}
+.show-middle-animation {
+	animation: middleSideAnimation 2s 0.5s forwards;
+}
+.show-right-animation {
+	animation: rightSideAnimation 2s forwards;
+}
+
+
+@keyframes hoverFromCenter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
